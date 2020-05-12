@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Fiche perso</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div class="blockPage">
+            <div class="ChartDiv">
+                <span>
+                    <canvas id="spiderWebChartCanvas" width="450" height="450"></canvas>
+                </span>
+            </div>
+            <div>
+                <p>Au moins trois caractéristiques sont nécessaires pour dessiner le graphique.</p>
+                <div id="inputsList">
+                    <span class="inputSpan">
+                        <input type="text" class="charName" name="charName" value="Force" required="true"/>
+                        <input type="number" class="charValue" name="charValue" min="0" max="10" value="5"/>
+                        <button class="deleteBtn">&times;</button>
+                    </span>
+                    <span class="inputSpan">
+                        <input type="text" class="charName" name="charName" value="Agilité" required="true"/>
+                        <input type="number" class="charValue" name="charValue" min="0" max="10" value="5"/>
+                        <button class="deleteBtn">&times;</button>
+                    </span>
+                    <span class="inputSpan">
+                        <input type="text" class="charName" name="charName" value="Intelligence" required="true"/>
+                        <input type="number" class="charValue" name="charValue" min="0" max="10" value="5"/>
+                        <button class="deleteBtn">&times;</button>
+                    </span>
+                    <span class="inputSpan">
+                        <input type="text" class="charName" name="charName" value="Charisme" required="true"/>
+                        <input type="number" class="charValue" name="charValue" min="0" max="10" value="5"/>
+                        <button class="deleteBtn">&times;</button>
+                    </span>
+                    <span class="inputSpan">
+                        <input type="text" class="charName" name="charName" value="Chance" required="true"/>
+                        <input type="number" class="charValue" name="charValue" min="0" max="10" value="5"/>
+                        <button class="deleteBtn">&times;</button>
+                    </span>
+                </div>
+                <div id="buttonsDiv">
+                    <span>
+                        <button id="addCharacteristic" class="formButton">Ajouter une caractéristique</button>
+                        <button id="drawChart" class="formButton">Dessiner le graphique</button>
+                    </span>
+                    <span>
+                        <a id="downloadChartBtn" class="formButton">Enregistrer le graphique au format PNG</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script src="spiderWebChart.js"></script>
+    </body>
+</html>

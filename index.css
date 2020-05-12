@@ -1,0 +1,66 @@
+.blockPage {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    max-width: 350px;
+}
+
+#inputsList {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.inputSpan {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.inputSpan > input[type="text"] {
+    margin-right: 5px;
+}
+
+.inputSpan > input[type="number"] {
+    margin-right: 5px;
+}
+
+.deleteBtn {
+    color: white;
+    background-color: red;
+    border: solid 1px red;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#buttonsDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttonsDiv > span {
+    margin-bottom: 10px;
+}
+
+.formButton {
+    font-family: "Arial";
+    font-size: 14px;
+    background-color: lightgrey;
+    border: solid 1px grey;
+    padding: 5px;
+}
+
+#downloadChartBtn {
+    font-family: "Arial";
+    font-size: 14px;
+    background-color: lightgrey;
+    border: solid 1px grey;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
